@@ -4,16 +4,17 @@
 
 1. Table of Contents
 2. Homework Details
-3. JavaScript Questions
-4. Node.js Questions
-5. React.js Questions
-6. Internet/Network questions
+3. Core JavaScript Questions
+4. ES6 Questions
+5. Node.js Questions
+6. React.js Questions
+7. Internet/Network questions
 
 ## Homework Details
 
 This homework is designed to prepare you for questions you may face during an interview. It should take you no more than 3 hours. It's akin to an open book quiz since you can use the internet to look things up. But first, try going through and seeing how many questions you can answer without using google/stackoverflow/anyOtherInternetSource! And then go back and look up the answers to the ones that stumped you.
 
-## JavaScript Questions
+## Core JavaScript Questions
 
 1. What is the difference between `undefined` and `not defined` in JavaScript?
 2. What is "Hoisting" in JavaScript?
@@ -105,3 +106,40 @@ console.log(y);
  })();
 
 ```
+14. What is the instanceof operator in JavaScript? What would be the output of the code below?
+```javascript
+function foo(){ 
+  return foo; 
+}
+new foo() instanceof foo;
+```
+15. What constitutes a "Primitive" value in Javascript?
+16. What is the difference between a reference type variable and a value type variable?
+
+## ES6 Questions
+
+1. What is the difference between JavaScript and ECMAScript?
+2. What do `const` and `let` do? And when would we use them?
+3. How would you describe the difference between `function` and `function*`?
+4. When would you NOT use an arrow function in the place of a regular function expression?
+5. Refactor the following code to use an ES6 Template Literal.
+```javascript
+var name = 'Tiger';
+var age = 13;
+
+console.log('My cat is named ' + name + ' and is ' + age + ' years old.');
+```
+6. How would you refactor the following code to use ES6 default parameters?
+```javascript
+function addTwoNumbers(x, y) {
+    x = x || 0;
+    y = y || 0;
+    return x + y;
+}
+```
+
+## Node.js Questions
+
+## React.js Questions
+
+## Internet/Network Questions
