@@ -25,5 +25,83 @@ This homework is designed to prepare you for questions you may face during an in
       }
      console.log(y);
 ```
-4. What is the drawback of creating true private methods in JavaScript?
+4. What is a "private method"?
+5. What is the drawback of creating true private methods in JavaScript?
+6. What is a “closure” in JavaScript? Provide an example.
+7. Write a mul function which will produce the following outputs when invoked.
+```javascript
+console.log(mul(2)(3)(4)); // output : 24 
+console.log(mul(4)(3)(4)); // output : 48
+```
+8. How would you empty an array in JavaScript? Provide at least 2 methods of doing so.
+9. What will be the output of the following code?
+```javascript
+var output = (function(x){
+    delete x;
+    return x;
+  })(0);
+  
+  console.log(output);
+```
+What about this code?
+```javascript
+var x = 1;
+var output = (function(){
+    delete x;
+    return x;
+  })();
+  
+  console.log(output);
+```
+And what about this one?
+```javascript
+var x = { foo : 1};
+var output = (function(){
+    delete x.foo;
+    return x.foo;
+  })();
+  
+  console.log(output);
+```
+And finally, what about this one?
+```javascript
+var Employee = {
+  company: 'xyz'
+}
+var emp1 = Object.create(Employee);
+delete emp1.company
+console.log(emp1.company);
+```
+10. What would this code return?
+```javascript
+var trees = ["xyz","xxxx","test","ryan","apple"];
+delete trees[3];
+  
+  console.log(trees.length);
+```
+11. What will be the output of the code below?
+```javascript
+var bar = true;
+console.log(bar + 0);   
+console.log(bar + "xyz");  
+console.log(bar + true);  
+console.log(bar + false);   
+```
+12. What will be the output of the code below?
+```javascript
+var z = 1, y = z = typeof y;
+console.log(y);  
+```
+13. What would be the output of the code below?
+```javascript
+ var salary = "1000$";
 
+ (function () {
+     console.log("Original salary was " + salary);
+
+     var salary = "5000$";
+
+     console.log("My New Salary " + salary);
+ })();
+
+```
