@@ -115,6 +115,7 @@ new foo() instanceof foo;
 ```
 15. What constitutes a "Primitive" value in Javascript?
 16. What is the difference between a reference type variable and a value type variable?
+17. How would you describe the difference between class-based inheritance and prototypical inheritance?
 
 ## ES6 Questions
 
@@ -137,9 +138,53 @@ function addTwoNumbers(x, y) {
     return x + y;
 }
 ```
+7. What is a "Promise" in ES6? And how many different states do they have?
+8. What is a practical use case for Promises? 
+9. What is wrong with the following code? And how could it be better?
+```javascript
+new Promise((resolve, reject) => {  
+  throw new Error('error')
+}).then(console.log)
+```
+10. Describe the .fetch() method. What is one disadvantage to using the .fetch() method over existing methods?
 
 ## Node.js Questions
 
+1. What is Node.js?
+2. What is an "Error-First" Callback?
+3. What is the Node.js Event Loop?
+4. Why might someone choose to use the Node.js Async single-threaded model over a more traditional multi-threaded model?
+5. What is meant by the term "non-blocking I/O"?
+6. What is the "memory stack"? And what happens when you exceed it?
+
 ## React.js Questions
 
+1. What makes React.js more efficient at updating the DOM?
+2. What is the difference between a Logical component and a Pure component?
+3. What happens when you call "setState" in React?
+4. What is the React method to create a component? Alternatively, how would you accomplish the same thing using ES6 classes?
+5. In which React lifecycle event would you make AJAX requests? And why?
+6. Why would you use `React.Children.map(props.children, () => )` instead of `props.children.map(() => )`?
+7. What is JSX?
+
 ## Internet/Network Questions
+
+1. What does TCP/IP stand for?
+2. Behind the scenes, how does HTTPS differ from HTTP?
+3. Define the general response status code categories.
+4. What does DDOS stand for?
+5. What is CORS? How does it work?
+6. What does REST stand for when we refer it in the context of a "RESTful API"? 
+
+## Resources
+
+https://blog.risingstack.com/node-js-interview-questions-and-answers-2017/
+https://www.codementor.io/nihantanu/21-essential-javascript-tech-interview-practice-questions-answers-du107p62z
+https://github.com/DrkSephy/es6-cheatsheet
+http://career.guru99.com/top-25-interview-questions-on-node-js/
+https://tylermcginnis.com/react-interview-questions/
+https://hackernoon.com/19-things-i-learnt-reading-the-nodejs-docs-8a2dcc7f307f
+http://wesbos.com/arrow-function-no-no/
+https://github.com/indy256/Full-stack-Developer-Interview-Questions-and-Answers
+https://github.com/arialdomartini/Back-End-Developer-Interview-Questions
+https://github.com/h5bp/Front-end-Developer-Interview-Questions
